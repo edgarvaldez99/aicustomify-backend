@@ -17,15 +17,9 @@ git clone https://github.com/edgarvaldez99/aicustomify-backend.git
 cd aicustomify-backend
 ```
 
-### Configuración del entorno virtual y dependencias
+## Configuración del entorno virtual y dependencias
 
-- Instalar [Poetry](https://python-poetry.org/docs/#installation) y [Docker](https://docs.docker.com/engine/install)
-
-- Instalar dependencias: Una vez dentro del directorio del proyecto, ejecuta:
-  ```
-  poetry install
-  ```
-  Esto instalará todas las dependencias necesarias para el proyecto en un entorno virtual administrado por Poetry.
+Instalar [Poetry](https://python-poetry.org/docs/#installation) y [Docker](https://docs.docker.com/engine/install)
 
 ### Crear entorno virtual
 
@@ -39,11 +33,25 @@ o
 py -m venv .venv
 ```
 
+### Instalar dependencias
+
+Una vez dentro del directorio del proyecto, ejecuta:
+
+```
+poetry install
+```
+
+Esto instalará todas las dependencias necesarias para el proyecto en un entorno virtual administrado por Poetry.
+
 ### Acceder al entorno virtual
 
 ```
 poetry shell
 ```
+
+## Configurar variables de entornos
+
+Crear el archivo de configuracion `.env` con los datos especificados en el `.env-example`
 
 ## Ejecutar la aplicación localmente
 
