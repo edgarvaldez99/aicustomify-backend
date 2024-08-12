@@ -1,0 +1,20 @@
+services:
+  backend:
+    build: .
+    ports:
+      - ${BACKEND_PORT}:8000
+    depends_on:
+      - mongodb
+
+  mongodb:
+    image: mongo:8.0.0-rc16-jammy
+    ports:
+      - ${MONGO_PORT}:27017
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: ${MONGO_USER}
+      MONGO_INITDB_ROOT_PASSWORD: ${MONGO_PASS}
+    volumes:
+      - mongodb:/data/db
+
+volumes:
+  mongodb:

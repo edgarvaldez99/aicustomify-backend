@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "aicustomify-backend"
+version = "0.0.0"
+description = ""
+authors = ["Edgar Valdez <edgarvaldez99@gmail.com>"]
+packages = [
+    { include = "app" },
+]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = {extras = ["standard"], version = "^0.112.0"}
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
