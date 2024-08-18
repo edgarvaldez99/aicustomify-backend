@@ -4,7 +4,7 @@ from pymongo import MongoClient
 
 MONGO_USER = str(env("MONGO_USER", "user"))
 MONGO_PASS = str(env("MONGO_PASS", "pass"))
-MONGO_HOST = str(env("MONGO_HOST", "localhost"))
+MONGO_HOST = str(env("MONGO_HOST", "localhost:27017"))
 MONGO_NAME = str(env("MONGO_NAME", "database"))
 MONGO_DATABASE_URI = f"mongodb://{MONGO_USER}:{MONGO_PASS}@{MONGO_HOST}"
 

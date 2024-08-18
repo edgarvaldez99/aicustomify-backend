@@ -1,7 +1,7 @@
 from fastapi import APIRouter
 
-from app.repositories.test import test_db
-from app.schemas.test import TestSchema
+from app.repositories import test_db
+from app.schemas import TestSchema
 
 api = APIRouter()
 

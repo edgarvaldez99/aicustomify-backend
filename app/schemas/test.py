@@ -1,13 +1,6 @@
-from typing_extensions import TypedDict, NotRequired
-
 from pydantic import BaseModel
 
-from .objectid import ObjectId
-
-
-class TestSchemaDict(TypedDict):
-    _id: NotRequired[ObjectId]
-    test: int
+from app.models import ObjectId
 
 
 class TestSchema(BaseModel):
